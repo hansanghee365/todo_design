@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <title>todoDesign</title>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <h2>TodoList(2)</h2>
+      </div>
+    </header>
+    <article>
+      <div class="todoList">
+        <div class="todo">
+          <div class="text">
+            プログラミング
+          </div>
+          <div class="button">
+            <i class="fas fa-check"></i>
+            <i class="fa fa-trash"></i>
+          </div>
+        </div>
+        <div class="todo check">
+          <div class="text">
+            プログラミング
+          </div>
+          <div class="button">
+            <i class="fas fa-check"></i>
+            <i class="fa fa-trash"></i>
+          </div>
+        </div>
+        <div class="todo check">
+          <div class="text">
+            プログラミング
+          </div>
+          <div class="button">
+            <i class="fas fa-check"></i>
+            <i class="fa fa-trash"></i>
+          </div>
+        </div>
+        <div class="todo check">
+          <div class="text">
+            プログラミング
+          </div>
+          <div class="button">
+            <i class="fas fa-check"></i>
+            <i class="fa fa-trash"></i>
+          </div>
+        </div>
+        <div class="todo check">
+          <div class="text">
+            プログラミング
+          </div>
+          <div class="button">
+            <i class="fas fa-check"></i>
+            <i class="fa fa-trash"></i>
+          </div>
+        </div>
+        
+      </div>
+    </article>
+    <div class="plus_button" id="plus_button">
+      <i class="fa fa-plus"></i>
+    </div>
+    <div class="modal" id="modal">
+      <div class="background">
+      </div>
+      <form>
+        <input type="text">
+        <div class="add">
+          <i class="fa fa-plus"></i>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    var plus_button = document.getElementById('plus_button');
+    const modal = document.getElementById('modal');
+    plus_button.addEventListener('click',()=>{
+      if(modal.classList.contains('plus')){
+        modal.classList.remove('plus');
+      }else{
+        modal.classList.add('plus');
+      }
+    });
+    const background = document.querySelector('.background');
+    background.addEventListener('click',()=>{
+      if(modal.classList.contains('plus')){
+        modal.classList.remove('plus');
+      }else{
+        modal.classList.add('plus');
+      }
+    })
+  </script>
+</body>
+</html>
